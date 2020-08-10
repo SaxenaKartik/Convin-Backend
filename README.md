@@ -28,4 +28,4 @@
 - Crontab tasks are defined in `tracker_api/tasks.py`
 
 
-Note :  Pypi project django-celery required a celery version < 4.0, but I , therefore I used celery directly in settings.py
+Note :  Pypi project django-celery required a celery version < 4.0, but I have used celery version 4.3, therefore I used celery directly through `celery.py` in `tracker_project`
