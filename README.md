@@ -4,9 +4,9 @@
 
 ### Prerequisites 
 
-1. Python version 3.8+
-1. Pip version 20.0+ 
-1. Redis-Server version 5.0.7+
+1. Python version 3.8+ [*click here*](https://dev.to/mortoray/how-to-install-python-3-8-on-ubuntu-1bp4)
+1. Pip version 20.0+ [*click here*](https://linuxize.com/post/how-to-install-pip-on-ubuntu-18.04/)
+1. Redis-Server version 5.0.7+ [*click here*](https://redis.io/download)
 
 ### API Routes 
 
