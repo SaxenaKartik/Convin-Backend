@@ -1,1 +1,31 @@
 # Convin-Backend
+
+## To run the app 
+
+### Prerequisites 
+
+1. Python version 3.8+
+1. Pip version 20.0+ 
+1. Redis-Server version 5.0.7+
+
+### API Routes 
+
+- `api/` : API Root 
+- `api/task` : To view, create, update, modify, delete tasks
+- `api/tasktracker` : To view, create, update, modify, delete task trackers
+
+
+### Steps
+
+- Make a new virtual environment `python3 -m venv <name>`
+- Start the virtual environment `source <name>/bin/activate`
+- Install the requirements `pip3 install -r requirements.txt`
+- Make migrations of the models of the app `python3 manage.py migrate`
+- Start the app `python3 manage.py runserver 8080`
+- Check if redis-server is working `redis-server &&  redis-cli ping`
+- Start the celery worker `celery -A tracker_project worker -l info` (seperate terminal with same virtual environment)
+- Start the celery beat `celery -A tracker_project beat -l info` (seperate terminal with same virtual environment)
+- Crontab tasks are defined in `tracker_api/tasks.py`
+
+
+Note :  Pypi project django-celery required a celery version < 4.0, but I , therefore I used celery directly in settings.py
